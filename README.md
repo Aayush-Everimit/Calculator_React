@@ -8,8 +8,6 @@ This is a fully functional and stylish calculator application built using React 
 <img width="1037" height="719" alt="image" src="https://github.com/user-attachments/assets/57e390eb-5870-4cda-b601-2b30fb6295ba" />
 
 
-![Website Screenshot](https://placehold.co/800x400/3B82F6/FFFFFF?text=React+Calculator)
-
 ## Features
 
 * **Complete Arithmetic Operations:** Supports addition, subtraction, multiplication, and division.
