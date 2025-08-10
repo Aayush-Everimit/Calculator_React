@@ -4,22 +4,24 @@ import styles from "./App.module.css";
 
 function App() {
     const [inputValue, setInputValue] = useState("");
+    //Created array of values for calculator buttons
     const buttonContent1 = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "."];
     const buttonContent2 = ["+", "-", "*", "/","C","="];
-
+    //Event_handler
     function handleClick(value)  {
-        setInputValue((prev) => prev + value);
+        setInputValue((prev) => prev + value); // append new value to the previous one 
     }
-
+    //loops through an array by .map() method for creating button for each element in array
     const numberButtons = () => {
         return buttonContent1.map((item, index) => (
             <button key={index} onClick={() => handleClick(item)}>{item}</button>
         ));
     };
-
+    //make input  clear
     function handleClear(){
         setInputValue("");
     }
+    // using eval() method to perform whatever arithmetic operation to be made when press enter
     function handleEnter(){
         setInputValue(eval(inputValue).toString());
     }
